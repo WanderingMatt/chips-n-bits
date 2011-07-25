@@ -682,9 +682,8 @@
   <div class="paper">&nbsp;</div>
   <section class="page">
     {block:Posts}
-
-      {block:Text}
-        <article class="text post">
+      <article class="{PostType} post">
+        {block:Text}
           {block:Title}
             <header>
               <h2><a href="{Permalink}">{Title}</a></h2>
@@ -698,45 +697,9 @@
               {PostNotes}
             {/block:PostNotes}
           </div>
+        {/block:Text}
 
-          <script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>{block:Permalink}<div id="disqus_thread"></div>
-          <script type="text/javascript">
-            /**
-              * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
-              */
-            (function() {
-             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-             dsq.src = 'http://cooperatives.disqus.com/embed.js';
-             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=cooperatives">comments powered by Disqus.</a></noscript>
-          <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-          {/block:Permalink}<script type="text/javascript">
-          var disqus_shortname = 'cooperatives';
-          (function () {
-            var s = document.createElement('script'); s.async = true;
-            s.src = 'http://disqus.com/forums/cooperatives/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-          }());
-          </script>
-
-          <aside class="ribbon">
-            <ul>
-              <li class="type"><a href="{Permalink}">Permalink</a></li>
-              <li class="author"><img src="{PostAuthorPortraitURL-24}" alt="{PostAuthorName}" class="avatar" />
-              <li class="permalink"><a href="{Permalink}">{ShortMonth} <strong>{DayOfMonth}</strong></a></li>
-              {block:NoteCount}
-                <li class="notes"><a href="{Permalink}#notes"><span>Notes</span></a></li>
-              {/block:NoteCount}
-            </ul>
-          </aside>
-          <hr />
-        </article>
-      {/block:Text}
-
-      {block:Photo}
-        <article class="photo post">
+        {block:Photo}
           <div class="frame">
             <a href="{LinkURL}">
               {block:HighRes}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">{/block:HighRes}
@@ -745,22 +708,9 @@
           {block:Caption}
             {Caption}
           {/block:Caption}
-          <aside class="ribbon">
-            <ul>
-              <li class="type"><a href="{Permalink}">Permalink</a></li>
-              <li class="author"><img src="{PostAuthorPortraitURL-24}" alt="{PostAuthorName}" class="avatar" />
-              <li class="permalink"><a href="{Permalink}">{ShortMonth} <strong>{DayOfMonth}</strong></a></li>
-              {block:NoteCount}
-                <li class="notes"><a href="{Permalink}#notes"><span>Notes</span></a></li>
-              {/block:NoteCount}
-            </ul>
-          </aside>
-          <hr />
-        </article>
-      {/block:Photo}
+        {/block:Photo}
 
-      {block:Quote}
-        <article class="quote post">
+        {block:Quote}
           <header>
             <blockquote>
               <q>{Quote}</q>
@@ -769,23 +719,9 @@
               {/block:Source}
             </blockquote>
           </header>
+        {/block:Quote}
 
-          <aside class="ribbon">
-            <ul>
-              <li class="type"><a href="{Permalink}">Permalink</a></li>
-              <li class="author"><img src="{PostAuthorPortraitURL-24}" alt="{PostAuthorName}" class="avatar" />
-              <li class="permalink"><a href="{Permalink}">{ShortMonth} <strong>{DayOfMonth}</strong></a></li>
-              {block:NoteCount}
-                <li class="notes"><a href="{Permalink}#notes"><span>Notes</span></a></li>
-              {/block:NoteCount}
-            </ul>
-          </aside>
-          <hr />
-        </article>
-      {/block:Quote}
-
-      {block:Link}
-        <article class="link post">
+        {block:Link}
           <header>
             <h2><a href="{URL}">{Name}</a></h2>
             {block:Description}
@@ -797,22 +733,9 @@
               {PostNotes}
             {/block:PostNotes}
           </div>
-          <aside class="ribbon">
-            <ul>
-              <li class="type"><a href="{Permalink}">Permalink</a></li>
-              <li class="author"><img src="{PostAuthorPortraitURL-24}" alt="{PostAuthorName}" class="avatar" />
-              <li class="permalink"><a href="{Permalink}">{ShortMonth} <strong>{DayOfMonth}</strong></a></li>
-              {block:NoteCount}
-                <li class="notes"><a href="{Permalink}#notes"><span>Notes</span></a></li>
-              {/block:NoteCount}
-            </ul>
-          </aside>
-          <hr />
-        </article>
-      {/block:Link}
+        {/block:Link}
 
-      {block:Audio}
-        <article class="audio post">
+        {block:Audio}
           <header>
             {block:TrackName}
               <h2><a href="{Permalink}">{TrackName}</a></h2>
@@ -835,21 +758,9 @@
               {PostNotes}
             {/block:PostNotes}
           </div>
-          <aside class="ribbon">
-            <ul>
-              <li class="type"><a href="{Permalink}">Permalink</a></li>
-              <li class="permalink"><a href="{Permalink}">{ShortMonth} <strong>{DayOfMonth}</strong></a></li>
-              {block:NoteCount}
-                <li class="notes"><a href="{Permalink}#notes"><span>Notes</span></a></li>
-              {/block:NoteCount}
-            </ul>
-          </aside>
-          <hr />
-        </article>
-      {/block:Audio}
+        {/block:Audio}
 
-      {block:Video}
-        <article class="video post">
+        {block:Video}
           <div class="screen">
             {Video-500}
           </div>
@@ -861,19 +772,20 @@
               {PostNotes}
             {/block:PostNotes}
           </div>
-          <aside class="ribbon">
-            <ul>
-              <li class="type"><a href="{Permalink}">Permalink</a></li>
-              <li class="author"><img src="{PostAuthorPortraitURL-24}" alt="{PostAuthorName}" class="avatar" />
-              <li class="permalink"><a href="{Permalink}">{ShortMonth} <strong>{DayOfMonth}</strong></a></li>
-              {block:NoteCount}
-                <li class="notes"><a href="{Permalink}#notes"><span>Notes</span></a></li>
-              {/block:NoteCount}
-            </ul>
-          </aside>
-          <hr />
-        </article>
-      {/block:Video}
+        {/block:Video}
+        
+        <aside class="ribbon">
+          <ul>
+            <li class="type"><a href="{Permalink}">Permalink</a></li>
+            <li class="author"><img src="{PostAuthorPortraitURL-24}" alt="{PostAuthorName}" class="avatar" />
+            <li class="permalink"><a href="{Permalink}">{ShortMonth} <strong>{DayOfMonth}</strong></a></li>
+            {block:NoteCount}
+              <li class="notes"><a href="{Permalink}#notes"><span>Notes</span></a></li>
+            {/block:NoteCount}
+          </ul>
+        </aside>
+        <hr />
+      </article>
     {/block:Posts}
 
     {block:Pagination}
