@@ -4,6 +4,8 @@
   <title>{Title}</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="description" content="{MetaDescription}" />
+  <meta property="fb:app_id" content="171452686256352" />
+  <meta property="fb:admins" content="1627382967,1520144806" />
   <link rel="icon" href="{Favicon}" />
   <link rel="alternate" type="application/rss+xml" href="{RSS}" />
   <!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -226,7 +228,7 @@
     top: 0;
     width: 470px;
   }
-
+  
   .paper {
     background: #fff;
     bottom: 0;
@@ -284,7 +286,7 @@
 
   .post p { padding: 0 80px 20px 20px; }
 
-  .post p a:hover {
+  .post p a:hover, .post #notes a:hover {
     background-color: #ffc;
     color: rgba(0, 0, 0, .8);
   }
@@ -353,6 +355,11 @@
     text-transform: uppercase;
   }
 
+  .notes a {
+    background-position: 13px -541px;
+    height: 20px;
+  }
+
   .post hr {
     background: url("http://static.tumblr.com/h42ojc9/4kRlbhn8m/bg_hr.png") 50% 2px no-repeat;
     border: 0;
@@ -379,7 +386,7 @@
   .text ul { list-style-type: disc; }
   .text ol { list-style-type: decimal; }
 
-  .text .ribbon ul {
+  .text .notes, .text .ribbon ul {
     list-style-type: none;
     margin: 0;
   }
@@ -412,6 +419,7 @@
   }
 
   .photo .permalink a { background-position: 13px -405px; }
+  .photo .notes a { background-position: 13px -620px; }
 
   /* =QUOTE */
 
@@ -521,6 +529,7 @@
   }
 
   .audio .permalink a { background-position: 13px -405px; }
+  .audio .notes a { background-position: 13px -620px; }
   .audio hr { background-image: url("http://static.tumblr.com/h42ojc9/664lbhpdq/bg_hr_rev.png"); }
 
   /* =VIDEO */
@@ -540,6 +549,50 @@
   }
 
   .video .permalink a { background-position: 13px -405px; }
+  .video .notes a { background-position: 13px -620px; }
+  
+  /* =COMMENTS */
+  
+  .fb_iframe_widget { padding-left: 20px; }
+
+  /* =NOTES */
+
+  #notes { padding: 0 80px 0 20px; }
+
+  #notes .notes {
+    border-top: 3px solid rgba(0, 0, 0, .05);
+    color: rgba(0, 0, 0, .4);
+    margin: -1px 0 20px;
+  }
+
+  #notes li {
+    background: url("http://static.tumblr.com/h42ojc9/EQtlc2fjy/1up.png") no-repeat 0 50%;
+    padding: 10px 20px 10px 80px;
+    position: relative;
+  }
+
+  #notes li:nth-child(1) {
+    border-top: 0;
+    padding-top: 8px;
+  }
+
+  #notes li:nth-child(even) { background-color: rgba(0, 0, 0, .05);}
+
+  #notes .avatar {
+    left: 52px;
+    position: absolute;
+    top: 11px;
+  }
+
+  #notes li:nth-child(1) .avatar { top: 10px; }
+
+  #notes img {
+    display: block;
+    height: 16px;
+    width: 16px;
+  }
+
+  #notes a { padding: 0; }
 
   /* =FOOTER */
 
@@ -643,7 +696,7 @@
               <p>by {PostAuthorName}</p>
             </header>
           {/block:Title}
-          {Body}
+          {Body}          
         {/block:Text}
 
         {block:Photo}
@@ -705,6 +758,10 @@
             {Caption}
           {/block:Caption}
         {/block:Video}
+        
+        {block:PermalinkPage}
+          <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="{Permalink}" num_posts="10" width="600"></fb:comments>
+        {/block:PermalinkPage}
         
         <aside class="ribbon">
           <ul>
