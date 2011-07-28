@@ -10,6 +10,26 @@
     <meta property="og:title" content="{Title}" />
     <meta property="og:url" content="http://chips-n-bits.com" />
   {/block:IndexPage}
+  {block:Permalink}
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{Permalink}" />
+    {block:Posts}
+      {block:Text}
+        <meta property="og:title" content="{Title}" />
+        <meta property="og:image" content="http://static.tumblr.com/h42ojc9/ozelp12sc/post_text.png"/>
+      {/block:Text}
+      {block:Photo}
+        <meta property="og:title" content="An incredible image posted on {Title}" />
+        <meta property="og:image" content="http://static.tumblr.com/h42ojc9/pFOlp13sp/post_photo.png" />
+        <meta property="og:image" content="{PhotoURL-HighRes}" />
+      {/block:Photo}
+      {block:Quote}
+        <meta property="og:title" content="A magnificent quote posted on {Title}" />
+        <meta property="og:image" content="http://static.tumblr.com/h42ojc9/OtYlp14t6/post_quote.png" />
+        <meta property="og:description" content="{Quote}" />
+      {/block:Quote}
+    {/block:Posts}
+  {/block:Permalink}
   <meta property="og:site_name" content="Chips &amp; Bits" />
   <meta property="fb:app_id" content="171452686256352" />
   <meta property="fb:admins" content="1627382967,1520144806" />
@@ -235,7 +255,7 @@
     top: 0;
     width: 470px;
   }
-  
+
   .paper {
     background: #fff;
     bottom: 0;
@@ -557,9 +577,9 @@
 
   .video .permalink a { background-position: 13px -405px; }
   .video .notes a { background-position: 13px -620px; }
-  
+
   /* =COMMENTS */
-  
+
   .fb_iframe_widget { padding-left: 20px; }
 
   /* =NOTES */
@@ -703,7 +723,7 @@
               <p>by {PostAuthorName}</p>
             </header>
           {/block:Title}
-          {Body}          
+          {Body}
         {/block:Text}
 
         {block:Photo}
@@ -765,11 +785,11 @@
             {Caption}
           {/block:Caption}
         {/block:Video}
-        
+
         {block:PermalinkPage}
           <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="{Permalink}" num_posts="10" width="600"></fb:comments>
         {/block:PermalinkPage}
-        
+
         <aside class="ribbon">
           <ul>
             <li class="type"><a href="{Permalink}">Permalink</a></li>
