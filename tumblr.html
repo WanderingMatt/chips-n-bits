@@ -6,6 +6,7 @@
   <meta name="description" content="{MetaDescription}" />
   {block:IndexPage}
     <meta property="og:type" content="blog" />
+    <meta property="og:image" content="http://static.tumblr.com/h42ojc9/VUjlp11r7/album_art.png" />
     <meta property="og:title" content="{Title}" />
     <meta property="og:url" content="http://chips-n-bits.com" />
   {/block:IndexPage}
@@ -37,6 +38,11 @@
         {block:TrackName}<meta property="og:title" content="{TrackName}" />{/block:TrackName}
         <meta property="og:image" content="http://static.tumblr.com/h42ojc9/cBolp8gu6/post_audio.png" />
         <meta property="og:description" content="{PlaintextCaption}" />
+        {block:ExternalAudio}<meta property="og:audio" content="{ExternalAudioURL}" />{/block:ExternalAudio}
+        {block:TrackName}<meta property="og:audio:title" content="{TrackName}" />{/block:TrackName}
+        {block:Artist}<meta property="og:audio:artist" content="{Artist}" />{/block:Artist}
+        {block:Album}<meta property="og:audio:album" content="{Album}" />{/block:Album}
+        <meta property="og:audio:type" content="application/mp3" />
       {/block:Audio}
       {block:Video}
         <meta property="og:title" content="An educational video posted on {Title}" />
@@ -46,7 +52,6 @@
     {/block:Posts}
   {/block:Permalink}
   <meta property="og:site_name" content="Chips &amp; Bits" />
-  <meta property="og:image" content="http://static.tumblr.com/h42ojc9/VUjlp11r7/album_art.png" />
   <meta property="fb:app_id" content="171452686256352" />
   <meta property="fb:admins" content="1627382967,1520144806" />
   <link rel="icon" href="{Favicon}" />
