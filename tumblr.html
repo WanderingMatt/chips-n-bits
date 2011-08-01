@@ -6,7 +6,6 @@
   <meta name="description" content="{MetaDescription}" />
   {block:IndexPage}
     <meta property="og:type" content="blog" />
-    <meta property="og:image" content="http://static.tumblr.com/h42ojc9/VUjlp11r7/album_art.png" />
     <meta property="og:title" content="{Title}" />
     <meta property="og:url" content="http://chips-n-bits.com" />
   {/block:IndexPage}
@@ -22,15 +21,32 @@
         <meta property="og:title" content="An incredible image posted on {Title}" />
         <meta property="og:image" content="http://static.tumblr.com/h42ojc9/pFOlp13sp/post_photo.png" />
         <meta property="og:image" content="{PhotoURL-HighRes}" />
+        {block:Caption}<meta property="og:description" content="{PlaintextCaption}" />{block:Caption}
       {/block:Photo}
       {block:Quote}
-        <meta property="og:title" content="A magnificent quote posted on {Title}" />
+        <meta property="og:title" content="{Quote}" />
         <meta property="og:image" content="http://static.tumblr.com/h42ojc9/OtYlp14t6/post_quote.png" />
-        <meta property="og:description" content="{Quote}" />
+        {block:Source}<meta property="og:description" content="{PlaintextSource}" />{/block:Source}
       {/block:Quote}
+      {block:Link}
+        <meta property="og:title" content="{Name}" />
+        <meta property="og:image" content="http://static.tumblr.com/h42ojc9/wirlp8dfa/post_link.png" />
+        {block:Description}<meta property="og:description" content="{PlaintextDescription}" />{/block:Description}
+      {/block:Link}
+      {block:Audio}
+        {block:TrackName}<meta property="og:title" content="{TrackName}" />{/block:TrackName}
+        <meta property="og:image" content="http://static.tumblr.com/h42ojc9/cBolp8gu6/post_audio.png" />
+        <meta property="og:description" content="{PlaintextCaption}" />
+      {/block:Audio}
+      {block:Video}
+        <meta property="og:title" content="An educational video posted on {Title}" />
+        <meta property="og:image" content="http://static.tumblr.com/h42ojc9/jUhlp8hcq/post_video.png" />
+        {block:Caption}<meta property="og:description" content="{PlaintextCaption}" />{block:Caption}
+      {/block:Video}
     {/block:Posts}
   {/block:Permalink}
   <meta property="og:site_name" content="Chips &amp; Bits" />
+  <meta property="og:image" content="http://static.tumblr.com/h42ojc9/VUjlp11r7/album_art.png" />
   <meta property="fb:app_id" content="171452686256352" />
   <meta property="fb:admins" content="1627382967,1520144806" />
   <link rel="icon" href="{Favicon}" />
