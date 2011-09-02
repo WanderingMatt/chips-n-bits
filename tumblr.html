@@ -334,9 +334,16 @@
 
   .post p { padding: 0 80px 20px 20px; }
 
-  .post p a:hover, .post #notes a:hover {
+  .post p a:hover {
     background-color: #ffc;
     color: rgba(0, 0, 0, .8);
+  }
+  
+  .like { margin: 0 80px 20px 20px; }
+
+  .comments {
+    margin: 0 80px 0 20px;
+    padding-bottom: 16px;
   }
 
   .ribbon {
@@ -402,18 +409,14 @@
     margin-bottom: 20px;
     text-transform: uppercase;
   }
-
-  .notes a {
-    background-position: 13px -541px;
-    height: 20px;
-  }
-
+  
   .post hr {
-    background: url("http://static.tumblr.com/h42ojc9/4kRlbhn8m/bg_hr.png") 50% 2px no-repeat;
+    background: url("http://static.tumblr.com/h42ojc9/4kRlbhn8m/bg_hr.png") 50% 15px no-repeat;
     border: 0;
+    border-top: 3px double rgba(0, 0, 0, .1);
     clear: both;
     display: block;
-    height: 20px;
+    height: 17px;
     margin: 0;
     padding-bottom: 80px;
   }
@@ -423,6 +426,11 @@
   .text .type a {
     background-position: 13px -896px;
     margin-bottom: 39px;
+  }
+  
+  .text header {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding-bottom: 19px;
   }
 
   .text header p {
@@ -434,7 +442,7 @@
   .text ul { list-style-type: disc; }
   .text ol { list-style-type: decimal; }
 
-  .text .notes, .text .ribbon ul {
+  .text .ribbon ul {
     list-style-type: none;
     margin: 0;
   }
@@ -467,7 +475,6 @@
   }
 
   .photo .permalink a { background-position: 13px -405px; }
-  .photo .notes a { background-position: 13px -620px; }
 
   /* =QUOTE */
 
@@ -577,7 +584,6 @@
   }
 
   .audio .permalink a { background-position: 13px -405px; }
-  .audio .notes a { background-position: 13px -620px; }
   .audio hr { background-image: url("http://static.tumblr.com/h42ojc9/664lbhpdq/bg_hr_rev.png"); }
 
   /* =VIDEO */
@@ -585,7 +591,7 @@
   .video .type a { background-position: 13px -1496px; }
   .video .screen { margin-bottom: 20px; }
 
-  .video object, .video embed, .video iframe {
+  .video object, .video embed, .video .screen iframe {
     display: block;
     height: 420px !important;
     width: 700px !important;
@@ -597,50 +603,6 @@
   }
 
   .video .permalink a { background-position: 13px -405px; }
-  .video .notes a { background-position: 13px -620px; }
-
-  /* =COMMENTS */
-
-  .fb_iframe_widget { padding-left: 20px; }
-
-  /* =NOTES */
-
-  #notes { padding: 0 80px 0 20px; }
-
-  #notes .notes {
-    border-top: 3px solid rgba(0, 0, 0, .05);
-    color: rgba(0, 0, 0, .4);
-    margin: -1px 0 20px;
-  }
-
-  #notes li {
-    background: url("http://static.tumblr.com/h42ojc9/EQtlc2fjy/1up.png") no-repeat 0 50%;
-    padding: 10px 20px 10px 80px;
-    position: relative;
-  }
-
-  #notes li:nth-child(1) {
-    border-top: 0;
-    padding-top: 8px;
-  }
-
-  #notes li:nth-child(even) { background-color: rgba(0, 0, 0, .05);}
-
-  #notes .avatar {
-    left: 52px;
-    position: absolute;
-    top: 11px;
-  }
-
-  #notes li:nth-child(1) .avatar { top: 10px; }
-
-  #notes img {
-    display: block;
-    height: 16px;
-    width: 16px;
-  }
-
-  #notes a { padding: 0; }
 
   /* =FOOTER */
 
@@ -745,6 +707,9 @@
             </header>
           {/block:Title}
           {Body}
+          <div class="like">
+            <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=231744030198401&amp;xfbml=1"></script><fb:like href="{Permalink}" send="false" width="600" show_faces="true" font=""></fb:like>
+          </div>
         {/block:Text}
 
         {block:Photo}
@@ -756,6 +721,9 @@
           {block:Caption}
             {Caption}
           {/block:Caption}
+          <div class="like">
+            <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=231744030198401&amp;xfbml=1"></script><fb:like href="{Permalink}" send="false" width="600" show_faces="true" font=""></fb:like>
+          </div>
         {/block:Photo}
 
         {block:Quote}
@@ -805,12 +773,20 @@
           {block:Caption}
             {Caption}
           {/block:Caption}
+          
+          <div class="like">
+            <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=231744030198401&amp;xfbml=1"></script><fb:like href="{Permalink}" send="false" width="600" show_faces="true" font=""></fb:like>
+          </div>
         {/block:Video}
 
         {block:PermalinkPage}
-          <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="{Permalink}" num_posts="10" width="600"></fb:comments>
+          <div class="comments">
+            <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="{Permalink}" num_posts="10" width="600"></fb:comments>
+          </div>
         {/block:PermalinkPage}
 
+        <hr />
+        
         <aside class="ribbon">
           <ul>
             <li class="type"><a href="{Permalink}">Permalink</a></li>
@@ -818,7 +794,6 @@
             <li class="permalink"><a href="{Permalink}">{ShortMonth} <strong>{DayOfMonth}</strong></a></li>
           </ul>
         </aside>
-        <hr />
       </article>
     {/block:Posts}
 

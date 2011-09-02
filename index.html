@@ -226,7 +226,7 @@
     top: 0;
     width: 470px;
   }
-  
+
   .paper {
     background: #fff;
     bottom: 0;
@@ -284,9 +284,16 @@
 
   .post p { padding: 0 80px 20px 20px; }
 
-  .post p a:hover, .post #notes a:hover {
+  .post p a:hover {
     background-color: #ffc;
     color: rgba(0, 0, 0, .8);
+  }
+  
+  .like { margin: 0 80px 20px 20px; }
+
+  .comments {
+    margin: 0 80px 0 20px;
+    padding-bottom: 16px;
   }
 
   .ribbon {
@@ -352,18 +359,14 @@
     margin-bottom: 20px;
     text-transform: uppercase;
   }
-
-  .notes a {
-    background-position: 13px -541px;
-    height: 20px;
-  }
-
+  
   .post hr {
-    background: url("http://static.tumblr.com/h42ojc9/4kRlbhn8m/bg_hr.png") 50% 2px no-repeat;
+    background: url("http://static.tumblr.com/h42ojc9/4kRlbhn8m/bg_hr.png") 50% 15px no-repeat;
     border: 0;
+    border-top: 3px double rgba(0, 0, 0, .1);
     clear: both;
     display: block;
-    height: 20px;
+    height: 17px;
     margin: 0;
     padding-bottom: 80px;
   }
@@ -373,6 +376,11 @@
   .text .type a {
     background-position: 13px -896px;
     margin-bottom: 39px;
+  }
+  
+  .text header {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding-bottom: 19px;
   }
 
   .text header p {
@@ -384,7 +392,7 @@
   .text ul { list-style-type: disc; }
   .text ol { list-style-type: decimal; }
 
-  .text .notes, .text .ribbon ul {
+  .text .ribbon ul {
     list-style-type: none;
     margin: 0;
   }
@@ -417,7 +425,6 @@
   }
 
   .photo .permalink a { background-position: 13px -405px; }
-  .photo .notes a { background-position: 13px -620px; }
 
   /* =QUOTE */
 
@@ -527,7 +534,6 @@
   }
 
   .audio .permalink a { background-position: 13px -405px; }
-  .audio .notes a { background-position: 13px -620px; }
   .audio hr { background-image: url("http://static.tumblr.com/h42ojc9/664lbhpdq/bg_hr_rev.png"); }
 
   /* =VIDEO */
@@ -535,10 +541,9 @@
   .video .type a { background-position: 13px -1496px; }
   .video .screen { margin-bottom: 20px; }
 
-  .video object, .video embed, .video iframe {
+  .video object, .video embed, .video iframe:first-child {
     display: block;
     height: 420px !important;
-    width: 700px !important;
   }
 
   .video .ribbon a {
@@ -547,50 +552,6 @@
   }
 
   .video .permalink a { background-position: 13px -405px; }
-  .video .notes a { background-position: 13px -620px; }
-  
-  /* =COMMENTS */
-  
-  .fb_iframe_widget { padding-left: 20px; }
-
-  /* =NOTES */
-
-  #notes { padding: 0 80px 0 20px; }
-
-  #notes .notes {
-    border-top: 3px solid rgba(0, 0, 0, .05);
-    color: rgba(0, 0, 0, .4);
-    margin: -1px 0 20px;
-  }
-
-  #notes li {
-    background: url("http://static.tumblr.com/h42ojc9/EQtlc2fjy/1up.png") no-repeat 0 50%;
-    padding: 10px 20px 10px 80px;
-    position: relative;
-  }
-
-  #notes li:nth-child(1) {
-    border-top: 0;
-    padding-top: 8px;
-  }
-
-  #notes li:nth-child(even) { background-color: rgba(0, 0, 0, .05);}
-
-  #notes .avatar {
-    left: 52px;
-    position: absolute;
-    top: 11px;
-  }
-
-  #notes li:nth-child(1) .avatar { top: 10px; }
-
-  #notes img {
-    display: block;
-    height: 16px;
-    width: 16px;
-  }
-
-  #notes a { padding: 0; }
 
   /* =FOOTER */
 
@@ -682,9 +643,9 @@
       </ul>
     </nav>
     <!-- <div class="twitter">
-      <q><span>&ldquo;</span>This might be a good place for our most recent tweet to go!<span>&rdquo;</span></q>
-      <a href="#"><span>Follow us on Twitter</span></a>
-    </div> -->
+       <q><span>&ldquo;</span>This might be a good place for our most recent tweet to go!<span>&rdquo;</span></q>
+       <a href="#"><span>Follow us on Twitter</span></a>
+     </div> -->
   </section>
   <div class="controller">&nbsp;</div>
   <div class="paper">&nbsp;</div>
@@ -708,8 +669,13 @@
       <h3>Halo: Combat Evolved</h3>
 
       <p>I didn&#8217;t purchase the original. I didn&#8217;t even own an Xbox at the time. I convinced myself that I could get by with just a taste now and then. I can&#8217;t explain why I played so much of the game. The story had potential, but I didn&#8217;t end up caring about a single character. The game took place on these fabulous planets, yet the level design felt claustrophobic. Multiplayer was undoubtedly the most enjoyable part of the game and it was still handcuffed by my biggest gripe - your character moved <strong>so slow</strong>. All I could ever think about while playing was, <em>&#8220;I wish I had a mouse&#8221;</em>. The only thing that really impressed me were the innovative (at the time) vehicle controls. And yet, I kept coming back to it.</p>
-      
-      <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="example.com" num_posts="10" width="600"></fb:comments>
+
+      <div class="like">
+        <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=231744030198401&amp;xfbml=1"></script><fb:like href="http://example.com" send="false" width="600" show_faces="true" font=""></fb:like>
+      </div>
+      <div class="comments">
+        <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="http://example.com" num_posts="10" width="600"></fb:comments>
+      </div>
 
       <aside class="ribbon">
         <ul>
@@ -718,7 +684,8 @@
           <li class="permalink"><a href="#">Oct <strong>25</strong></a></li>
         </ul>
       </aside>
-      <hr />
+      
+      <hr />      
     </article>
 
     <article class="photo post">
@@ -730,6 +697,13 @@
 
       <p>What is there not to love about this cover?</p>
 
+      <div class="like">
+        <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=231744030198401&amp;xfbml=1"></script><fb:like href="http://example.com" send="false" width="600" show_faces="true" font=""></fb:like>
+      </div>
+      <div class="comments">
+        <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="http://example.com" num_posts="10" width="600"></fb:comments>
+      </div>
+      
       <aside class="ribbon">
         <ul>
           <li class="type"><a href="http://chips-n-bits.com/post/7886844295/what-is-there-not-to-love-about-this-cover">Permalink</a></li>
@@ -739,7 +713,7 @@
       </aside>
       <hr>
     </article>
-            
+
     <article class="photo post">
       <div class="frame hi-res">
         <a href="http://bits.cooperativ.es/post/2150294981/i-unlocked-the-living-human-statue-last-night-in">
@@ -834,9 +808,6 @@
         <p>Welcome to Chips &amp; Bits! iTunes subscription coming soon!</p>
       </div>
 
-      <div id="notes">
-
-      </div>
       <aside class="ribbon">
         <ul>
           <li class="type"><a href="http://bits.cooperativ.es/post/2072804187/the-first-inaugural-episode-of-the-chips-bits">Permalink</a></li>
