@@ -502,31 +502,7 @@
   }
 
   .audio embed { display: block; }
-
-  .audio .art { float: left;}
-  .audio .art img {
-    border: 5px solid #000;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -moz-box-shadow: 0 0 1px #fff;
-    -webkit-box-shadow: 0 0 1px #fff;
-    box-shadow: 0 0 1px #fff;
-    display: block;
-    height: 110px;
-    margin: 0 20px 20px;
-    width: 110px;
-  }
-
-  .audio .description {
-    float: left;
-    width: 540px;
-  }
-
-  .audio p {
-    color: rgba(255, 255, 255, .8);
-    padding-left: 0;
-  }
+  .audio p { color: rgba(255, 255, 255, .8); }
 
   .audio .ribbon a {
     color: rgba(255, 255, 255, .8);
@@ -541,9 +517,10 @@
   .video .type a { background-position: 13px -1496px; }
   .video .screen { margin-bottom: 20px; }
 
-  .video object, .video embed, .video iframe:first-child {
+  .video object, .video embed, .video .screen iframe {
     display: block;
     height: 420px !important;
+    width: 700px !important;
   }
 
   .video .ribbon a {
@@ -801,11 +778,14 @@
         <script type="text/javascript" language="javascript" src="http://assets.tumblr.com/javascript/tumblelog.js?17"></script><span id="audio_player_2072804187"><div class="audio_player"><embed type="application/x-shockwave-flash" src="http://bits.cooperativ.es/swf/audio_player_black.swf?audio_file=http://www.tumblr.com/audio_file/2072804187/tumblr_lctdh3n5vI1qdcxo7&amp;color=FFFFFF" height="27" width="207" quality="best"></div></span><script type="text/javascript">replaceIfFlash(9,"audio_player_2072804187",'\x3cdiv class=\x22audio_player\x22\x3e<embed type="application/x-shockwave-flash" src="http://bits.cooperativ.es/swf/audio_player_black.swf?audio_file=http://www.tumblr.com/audio_file/2072804187/tumblr_lctdh3n5vI1qdcxo7&color=FFFFFF" height="27" width="207" quality="best"></embed>\x3c/div\x3e')</script>
       </div>
 
-      <div class="art"><img src="http://25.media.tumblr.com/tumblr_lctdh3n5vI1qdcxo7_1291316777_cover.png"></div>
       <div class="description">
         <p>The first inaugural episode of the Chips &amp; Bits podcast starring your favourite Canadian and your handsome American best friend. For the record, even the spellchecker thinks favourite is misspelled.</p>
         <p>In this episode we introduce “The Madden List”, talk about Left 4 Dead 2, make fun of Matt, talk about the Red Dead Redemption ending and review Alan Wake. We also talk about this great new indie game called Halo: Reach and probably other not current topics since we recorded this weeks ago! This podcast is chock full of SPOILER ALERTS.</p>
         <p>Welcome to Chips &amp; Bits! iTunes subscription coming soon!</p>
+      </div>
+      
+      <div class="like">
+        <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=231744030198401&amp;xfbml=1"></script><fb:like href="http://example.com" send="false" width="600" show_faces="true" data-colorscheme="dark" font=""></fb:like>
       </div>
 
       <aside class="ribbon">
