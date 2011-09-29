@@ -288,8 +288,23 @@
     background-color: #ffc;
     color: rgba(0, 0, 0, .8);
   }
-  
+
+  .post ul, .post ol { margin: 0 0 20px 43px; }
+  .post header ul, .post header ol { margin-top: 20px; }
+  .post ul { list-style-type: disc; }
+  .post ol { list-style-type: decimal; }
+  blockquote { border-left: 2px solid rgba(0, 0, 0, .2); }
+
+  blockquote p {
+    color: #777;
+    font-style: italic;
+    padding-left: 18px;
+  }
+
+  blockquote p:last-child { padding-bottom: 0; }
+
   .like { margin: 0 80px 20px 20px; }
+  header .like { margin: 20px 0 0 0; }
 
   .comments {
     margin: 0 80px 0 20px;
@@ -305,6 +320,11 @@
     right: 0;
     top: 0;
     width: 59px;
+  }
+
+  .ribbon ul, .ribbon ol {
+    list-style-type: none;
+    margin: 0;
   }
 
   .ribbon a {
@@ -359,7 +379,7 @@
     margin-bottom: 20px;
     text-transform: uppercase;
   }
-  
+
   .post hr {
     background: url("http://static.tumblr.com/h42ojc9/4kRlbhn8m/bg_hr.png") 50% 15px no-repeat;
     border: 0;
@@ -377,7 +397,7 @@
     background-position: 13px -896px;
     margin-bottom: 39px;
   }
-  
+
   .text header {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     padding-bottom: 19px;
@@ -388,9 +408,8 @@
     padding: 0;
   }
 
-  .text ul, .text ol { margin: 0 0 20px 43px; }
-  .text ul { list-style-type: disc; }
-  .text ol { list-style-type: decimal; }
+  .text blockquote { margin-left: 20px; }
+  .text blockquote p { margin-bottom: 20px; }
 
   .text .ribbon ul {
     list-style-type: none;
@@ -430,6 +449,7 @@
 
   .quote header { min-height: 180px; }
   .quote .type a { background-position: 13px -1096px; }
+  .quote blockquote { border: 0; }
 
   .quote q {
     color: rgba(0, 0, 0, .8);
@@ -450,6 +470,7 @@
 
   .link header { min-height: 180px; }
   .link header p { margin-top: 20px; }
+  .link header blockquote p { padding-left: 18px; }
 
   .link h2 a {
     background: url("http://static.tumblr.com/h42ojc9/Aiklbhn94/bg_h2.png") right 0 no-repeat;
@@ -635,6 +656,10 @@
 
       <p>I consider myself pretty <a href="#">fortunate</a>. I was 21 years old before anyone tried to get me to do it for the first time. <em>&#8220;Everyone is doing it&#8221;</em>, they said. I remember how nervous I felt, walking up their driveway for the very first time. Once Inside, the true nature of the location was revealed. 4-10 guys. One television upstairs, one downstairs. The entire lot, hunched around their designated light source screaming, groaning and sweating. Random outbursts of anger. Pizza and Mountain Dew everywhere. How had I gotten myself in to this situation?</p>
 
+      <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </blockquote>
+
       <p>Peer pressure. It&#8217;s not just for candy anymore, children. It&#8217;s an epidemic in the world of video games and, arguably the most successful marketing campaign for several popular franchises. My story is just one example of how it can ruin, then subsequently enrich your life.</p>
 
       <ul>
@@ -642,6 +667,12 @@
         <li>List Item 2</li>
         <li>List Item 3</li>
       </ul>
+
+      <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+      </ol>
 
       <h3>Halo: Combat Evolved</h3>
 
@@ -661,8 +692,8 @@
           <li class="permalink"><a href="#">Oct <strong>25</strong></a></li>
         </ul>
       </aside>
-      
-      <hr />      
+
+      <hr />
     </article>
 
     <article class="photo post">
@@ -680,7 +711,7 @@
       <div class="comments">
         <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="http://example.com" num_posts="10" width="600"></fb:comments>
       </div>
-      
+
       <aside class="ribbon">
         <ul>
           <li class="type"><a href="http://chips-n-bits.com/post/7886844295/what-is-there-not-to-love-about-this-cover">Permalink</a></li>
@@ -756,6 +787,9 @@
       <header>
         <h2><a href="http://kotaku.com/5668573/review-final-fantasy-xiv">Review: Final Fantasy XIV</a></h2>
         <p>Squarenix&#8217; used to amaze me. Their past two releases have just bored me. This makes me incredibly sad. In this sentence, I'm testing <a href="#">another link</a> to ensure they don't get styled funny.</p>
+        <blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </blockquote>
       </header>
 
       <aside class="ribbon">
@@ -783,7 +817,7 @@
         <p>In this episode we introduce “The Madden List”, talk about Left 4 Dead 2, make fun of Matt, talk about the Red Dead Redemption ending and review Alan Wake. We also talk about this great new indie game called Halo: Reach and probably other not current topics since we recorded this weeks ago! This podcast is chock full of SPOILER ALERTS.</p>
         <p>Welcome to Chips &amp; Bits! iTunes subscription coming soon!</p>
       </div>
-      
+
       <div class="like">
         <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=231744030198401&amp;xfbml=1"></script><fb:like href="http://example.com" send="false" width="600" show_faces="true" data-colorscheme="dark" font=""></fb:like>
       </div>

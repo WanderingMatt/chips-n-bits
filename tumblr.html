@@ -339,8 +339,22 @@
     color: rgba(0, 0, 0, .8);
   }
 
+  .post ul, .post ol { margin: 0 0 20px 43px; }
+  .post header ul, .post header ol { margin-top: 20px; }
+  .post ul { list-style-type: disc; }
+  .post ol { list-style-type: decimal; }
+  blockquote { border-left: 2px solid rgba(0, 0, 0, .2); }
+
+  blockquote p {
+    color: #777;
+    font-style: italic;
+    padding-left: 18px;
+  }
+
+  blockquote p:last-child { padding-bottom: 0; }
+
   .like { margin: 0 80px 20px 20px; }
-  header .like { margin: 20px 80px 0 0; }
+  header .like { margin: 20px 0 0 0; }
 
   .comments {
     margin: 0 80px 0 20px;
@@ -356,6 +370,11 @@
     right: 0;
     top: 0;
     width: 59px;
+  }
+
+  .ribbon ul, .ribbon ol {
+    list-style-type: none;
+    margin: 0;
   }
 
   .ribbon a {
@@ -439,9 +458,8 @@
     padding: 0;
   }
 
-  .text ul, .text ol { margin: 0 0 20px 43px; }
-  .text ul { list-style-type: disc; }
-  .text ol { list-style-type: decimal; }
+  .text blockquote { margin-left: 20px; }
+  .text blockquote p { margin-bottom: 20px; }
 
   .text .ribbon ul {
     list-style-type: none;
@@ -481,6 +499,7 @@
 
   .quote header { min-height: 180px; }
   .quote .type a { background-position: 13px -1096px; }
+  .quote blockquote { border: 0; }
 
   .quote q {
     color: rgba(0, 0, 0, .8);
@@ -501,6 +520,7 @@
 
   .link header { min-height: 180px; }
   .link header p { margin-top: 20px; }
+  .link header blockquote p { padding-left: 18px; }
 
   .link h2 a {
     background: url("http://static.tumblr.com/h42ojc9/Aiklbhn94/bg_h2.png") right 0 no-repeat;
