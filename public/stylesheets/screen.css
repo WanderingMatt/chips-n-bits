@@ -1,0 +1,1062 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+html, body {
+  background: white;
+}
+
+body {
+  color: #333333;
+  font-family: "Helvetica Neue", Hevetica, Arial, sans-serif;
+  font-size: 110%;
+  line-height: 1.4;
+}
+
+.links a:link, .content a:link, section[role=main] > article a:link {
+  color: #bb3a08;
+  text-decoration: underline;
+}
+.links a:visited, .content a:visited, section[role=main] > article a:visited {
+  color: #aa7722;
+}
+.links a:hover, .content a:hover, section[role=main] > article a:hover {
+  color: #f66933;
+  text-decoration: none;
+}
+.links a.more, .content a.more, section[role=main] > article a.more {
+  white-space: nowrap;
+}
+.links a.more:after, .content a.more:after, section[role=main] > article a.more:after {
+  content: " »";
+}
+
+.typography strong, .content strong, section[role=main] > article strong, .typography b, .content b, section[role=main] > article b {
+  color: black;
+  font-weight: bold;
+}
+.typography em, .content em, section[role=main] > article em, .typography i, .content i, section[role=main] > article i {
+  font-style: italic;
+}
+.typography abbr, .content abbr, section[role=main] > article abbr, .typography acronym, .content acronym, section[role=main] > article acronym {
+  border-bottom: 1px dotted #999999;
+}
+.typography sub, .content sub, section[role=main] > article sub, .typography sup, .content sup, section[role=main] > article sup {
+  font-size: 85%;
+}
+.typography sub, .content sub, section[role=main] > article sub {
+  vertical-align: sub;
+}
+.typography sup, .content sup, section[role=main] > article sup {
+  vertical-align: super;
+}
+.typography span.caps, .content span.caps, section[role=main] > article span.caps {
+  font-size: 95%;
+}
+.typography h1, .content h1, section[role=main] > article h1, .typography h2, .content h2, section[role=main] > article h2, .typography h3, .content h3, section[role=main] > article h3, .typography h4, .content h4, section[role=main] > article h4, .typography h5, .content h5, section[role=main] > article h5, .typography h6, .content h6, section[role=main] > article h6 {
+  color: #111111;
+  margin: 1em 0;
+}
+.typography h1, .content h1, section[role=main] > article h1 {
+  font-weight: bold;
+  font-size: 200%;
+  line-height: 1.099;
+  margin: 0.75em 0;
+}
+.typography h2, .content h2, section[role=main] > article h2 {
+  font-weight: bold;
+  font-size: 170%;
+  line-height: 1.099;
+}
+.typography h3, .content h3, section[role=main] > article h3 {
+  font-weight: bold;
+  font-size: 140%;
+  line-height: 1.169;
+  margin: 1.25em 0 0.5em;
+}
+.typography h4, .content h4, section[role=main] > article h4 {
+  font-weight: bold;
+  font-size: 110%;
+  line-height: 1.26;
+  margin: 0.5em 0 0.5em;
+}
+.typography h5, .content h5, section[role=main] > article h5 {
+  font-style: italic;
+  font-size: 110%;
+  line-height: 1.4;
+  margin: 0.65em 0;
+}
+.typography h6, .content h6, section[role=main] > article h6 {
+  font-weight: bold;
+  margin-bottom: -0.75em;
+}
+.typography p, .content p, section[role=main] > article p {
+  margin: 1em 0;
+}
+.typography ul, .content ul, section[role=main] > article ul, .typography ol, .content ol, section[role=main] > article ol, .typography dl, .content dl, section[role=main] > article dl {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.typography ul, .content ul, section[role=main] > article ul, .typography ol, .content ol, section[role=main] > article ol, .typography dd, .content dd, section[role=main] > article dd {
+  padding-left: 2.25em;
+}
+.typography ul, .content ul, section[role=main] > article ul {
+  list-style: disc;
+}
+.typography ol, .content ol, section[role=main] > article ol {
+  list-style: decimal;
+}
+.typography li, .content li, section[role=main] > article li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.typography dt, .content dt, section[role=main] > article dt {
+  margin-top: 1em;
+}
+.typography dd, .content dd, section[role=main] > article dd {
+  margin-bottom: 1em;
+}
+.typography code, .content code, section[role=main] > article code, .typography dfn, .content dfn, section[role=main] > article dfn, .typography kbd, .content kbd, section[role=main] > article kbd, .typography samp, .content samp, section[role=main] > article samp, .typography tt, .content tt, section[role=main] > article tt {
+  font-family: Monaco, "Andale Mono", "Lucida Console", monospace;
+  font-size: 95%;
+  color: #666666;
+}
+.typography pre, .content pre, section[role=main] > article pre {
+  background: #666666;
+  color: #cccccc;
+  font-family: Monaco, "Andale Mono", "Lucida Console", monospace;
+  font-size: 95%;
+  line-height: 1.4;
+  margin: 1.5em 0;
+  padding: 1em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.content .box, section[role=main] > article .box {
+  background: #efeacf;
+  border: 1px solid #e2d9a9;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  margin: 1.5em -1em;
+  padding: 1px 1em;
+}
+
+header[role=banner] {
+  background: #973b12;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.15))), -webkit-gradient(radial, 30% 50px, 0, 30% 50px, 400, color-stop(0%, #973b12), color-stop(100%, #65270c));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), -webkit-radial-gradient(30% 50px, #973b12, #65270c 400px);
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), -moz-radial-gradient(30% 50px, #973b12, #65270c 400px);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), -o-radial-gradient(30% 50px, #973b12, #65270c 400px);
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), -ms-radial-gradient(30% 50px, #973b12, #65270c 400px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(30% 50px, #973b12, #65270c 400px);
+  padding: 20px 15%;
+  position: relative;
+}
+header[role=banner] a:link {
+  color: #ead7cf;
+  text-decoration: none;
+}
+header[role=banner] a:visited {
+  color: #ead7cf;
+}
+header[role=banner] a:hover {
+  color: white;
+  text-decoration: underline;
+}
+header[role=banner] .action-link {
+  position: absolute;
+  right: 15%;
+  top: 55px;
+}
+header[role=banner] .action-link a {
+  background: rgba(255, 255, 255, 0.1);
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  padding: 0.5em 1em;
+  text-shadow: #4b1d09 0 1px 0;
+}
+header[role=banner] .action-link a:after {
+  content: " ⇢";
+}
+
+section[role=main] {
+  padding: 1px 15%;
+}
+
+body > footer {
+  padding: 0 15% 20px;
+  font-size: 90%;
+  color: gray;
+}
+body > footer a:link {
+  color: #333333;
+  text-decoration: underline;
+}
+body > footer a:visited {
+  color: #333333;
+}
+body > footer a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+body > footer p {
+  margin: 1em 0;
+}
+
+/* CHIPS & BITS */
+/* AUTHOR: Matthew Anderson > matthew-anderson.net */
+/* =RESET */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header, section, footer, aside, nav, article, figure {
+  display: block;
+}
+
+/* HTML5 */
+/* =FLOATS */
+article:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+}
+
+/* =GLOBALS */
+body {
+  background: #111111 url("http://static.tumblr.com/h42ojc9/iJclbcbb5/bg.png") fixed;
+  color: #555;
+  font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+}
+
+strong {
+  line-height: 19px;
+}
+
+a {
+  color: #096;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* =GUTTER */
+.gutter {
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.5);
+  left: 0;
+  position: fixed;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+  top: 0;
+  width: 300px;
+}
+
+.gutter a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+h1 {
+  padding: 20px 0;
+}
+
+h1 a {
+  background: url("http://static.tumblr.com/h42ojc9/6x6lodwna/logo.png") no-repeat 50%;
+  display: block;
+  height: 200px;
+  text-indent: -9999px;
+}
+
+h1 a:hover {
+  color: #fff;
+}
+
+.rss {
+  background: url("http://static.tumblr.com/h42ojc9/Nx9ld56vz/sprite.png") -5px -740px no-repeat;
+  display: block;
+  height: 23px;
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  text-indent: -9999px;
+  width: 24px;
+}
+
+.rss:hover {
+  background-position: -5px -840px;
+}
+
+.gutter p {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 13px;
+  padding: 0 20px 18px 20px;
+  text-align: center;
+}
+
+.cover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* =NAV */
+/*
+.primary li:hover {
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, .05));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(rgba(0, 0, 0, .1)));
+  background-image: linear-gradient(top, transparent, rgba(0, 0, 0, .05));
+}
+*/
+.primary a {
+  background-image: url("http://static.tumblr.com/h42ojc9/Nx9ld56vz/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 10px 20px 10px 80px;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.6);
+  -moz-transition: background .25s, color .5s;
+  -webkit-transition: background .25s, color .5s;
+  transition: background .25s, color .5s;
+}
+
+.primary a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 9px 20px 9px 80px;
+}
+
+.primary .profile a {
+  background-image: none;
+  padding-left: 20px;
+}
+
+.primary .avatar {
+  background-position: 0 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  float: left;
+  height: 40px;
+  margin: -1px 20px 0 0;
+  -moz-transition: background .25s, color .5s;
+  -webkit-transition: background .25s, color .5s;
+  transition: background .25s, color .5s;
+  width: 40px;
+}
+
+.kenny .avatar {
+  background-image: url("http://static.tumblr.com/h42ojc9/MxSlbcbyc/kenny.jpg");
+}
+
+.matthew .avatar {
+  background-image: url("http://static.tumblr.com/h42ojc9/hndlbcbyy/matthew.jpg");
+}
+
+.profile a:hover .avatar {
+  background-position: 0 -40px;
+}
+
+.archives a {
+  background-position: 24px 10px;
+}
+
+.archives a:hover {
+  background-position: 24px -50px;
+}
+
+.podcast a {
+  background-position: 24px -115px;
+}
+
+.podcast a:hover {
+  background-position: 24px -175px;
+}
+
+h4 a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+h5 {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.primary a:hover {
+  color: #ffc;
+}
+
+/* =TWITTER */
+.twitter {
+  margin: 20px;
+  position: relative;
+}
+
+.twitter q {
+  display: block;
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-style: italic;
+  margin-bottom: 3px;
+  padding-top: 27px;
+  -moz-transition: color .5s;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.twitter:hover q {
+  color: #fff;
+}
+
+.twitter q span:first-child {
+  color: #333;
+  display: block;
+  font-family: "Franklin Gothic Book", serif;
+  font-size: 90px;
+  font-style: normal;
+  left: 0;
+  position: absolute;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+  top: 17px;
+}
+
+.twitter q span:last-child {
+  display: none;
+}
+
+.twitter a {
+  background: url("http://static.tumblr.com/h42ojc9/Nx9ld56vz/sprite.png") 0 -230px no-repeat;
+  color: #4ad2ff;
+  display: block;
+  font-size: 13px;
+  line-height: 40px;
+  padding-left: 60px;
+}
+
+.twitter a span {
+  -moz-transition: opacity .25s ease;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+  opacity: 0;
+}
+
+.twitter:hover a span {
+  opacity: 1;
+}
+
+/* =PAGE */
+.controller {
+  background: url("http://static.tumblr.com/h42ojc9/9Pdlbcc3g/bg_controller.png");
+  height: 445px;
+  left: 912px;
+  position: fixed;
+  top: 0;
+  width: 470px;
+}
+
+.paper {
+  background: #fff;
+  bottom: 0;
+  -mox-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  left: 300px;
+  position: fixed;
+  top: 0;
+  width: 700px;
+}
+
+.page {
+  background: white url("http://static.tumblr.com/h42ojc9/jwqloo3t7/bg_page.jpg");
+  bottom: 0;
+  left: 300px;
+  position: relative;
+  top: 0;
+  width: 700px;
+}
+
+/* =POSTS */
+.post {
+  position: relative;
+}
+
+header {
+  /*    background: rgba(0, 0, 0, .05) url("http://static.tumblr.com/h42ojc9/1edlbcbd5/bg_header.png") 0 -3px;*/
+  border-top: 3px double rgba(0, 0, 0, 0.1);
+  border-bottom: 3px double rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 37px 80px 17px 20px;
+}
+
+h2, .quote q {
+  font-size: 30px;
+  letter-spacing: -0.05em;
+  line-height: 40px;
+}
+
+h2 a {
+  color: rgba(0, 0, 0, 0.8);
+  padding: 2px 0;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  color: #096;
+}
+
+.post header p {
+  padding: 0;
+}
+
+h3 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  padding: 0 20px 20px 20px;
+}
+
+.post p {
+  padding: 0 80px 20px 20px;
+}
+
+.post p a:hover {
+  background-color: #ffc;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.post ul, .post ol {
+  margin: 0 0 20px 43px;
+}
+
+.post header ul, .post header ol {
+  margin-top: 20px;
+}
+
+.post ul {
+  list-style-type: disc;
+}
+
+.post ol {
+  list-style-type: decimal;
+}
+
+blockquote {
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+blockquote p {
+  color: #777;
+  font-style: italic;
+  padding-left: 18px;
+}
+
+blockquote p:last-child {
+  padding-bottom: 0;
+}
+
+.like {
+  margin: 0 80px 20px 20px;
+}
+
+header .like {
+  margin: 20px 0 0 0;
+}
+
+.comments {
+  margin: 0 80px 0 20px;
+  padding-bottom: 16px;
+}
+
+.ribbon {
+  display: none;
+  background: rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 640px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 59px;
+}
+
+.ribbon ul, .ribbon ol {
+  list-style-type: none;
+  margin: 0;
+}
+
+.ribbon a {
+  background-image: url("http://static.tumblr.com/h42ojc9/Nx9ld56vz/sprite.png");
+  background-position: bottom 17px;
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 10px;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+}
+
+.ribbon a strong {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.ribbon a span {
+  display: none;
+  text-indent: -9999px;
+}
+
+.type a {
+  background-position: 50%;
+  height: 40px;
+  padding: 40px 0 19px 0;
+  text-indent: -9999px;
+}
+
+.post .author {
+  margin-bottom: 8px;
+}
+
+.post .avatar {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6);
+  display: block;
+  height: 20px;
+  margin: 0 auto;
+  width: 20px;
+}
+
+.permalink a {
+  background: none;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.post hr {
+  background: url("http://static.tumblr.com/h42ojc9/4kRlbhn8m/bg_hr.png") 50% 15px no-repeat;
+  border: 0;
+  border-top: 3px double rgba(0, 0, 0, 0.1);
+  clear: both;
+  display: block;
+  height: 17px;
+  margin: 0;
+  padding-bottom: 80px;
+}
+
+/* =TEXT */
+.text .type a {
+  background-position: 13px -896px;
+  margin-bottom: 39px;
+}
+
+.text header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 19px;
+}
+
+.text header p {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+
+.text blockquote {
+  margin-left: 20px;
+}
+
+.text blockquote p {
+  margin-bottom: 20px;
+}
+
+.text .ribbon ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.text .ribbon a {
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.6);
+}
+
+/* =PHOTO */
+.photo .type a {
+  background-position: 13px -996px;
+}
+
+.photo .frame {
+  background: #000;
+  margin-bottom: 20px;
+}
+
+.photo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.photo .hi-res img {
+  width: 700;
+}
+
+.photo .ribbon a {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.6);
+}
+
+.photo .permalink a {
+  background-position: 13px -405px;
+}
+
+/* =QUOTE */
+.quote header {
+  min-height: 180px;
+}
+
+.quote .type a {
+  background-position: 13px -1096px;
+}
+
+.quote blockquote {
+  border: 0;
+}
+
+.quote q {
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-weight: 300;
+}
+
+.quote cite {
+  color: rgba(0, 0, 0, 0.5);
+  display: block;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.quote cite strong {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* =LINK */
+.link header {
+  min-height: 180px;
+}
+
+.link header p {
+  margin-top: 20px;
+}
+
+.link header blockquote p {
+  padding-left: 18px;
+}
+
+.link h2 a {
+  background: url("http://static.tumblr.com/h42ojc9/Aiklbhn94/bg_h2.png") right 0 no-repeat;
+  padding: 3px 60px 3px 0;
+}
+
+.link header a:hover {
+  background-position: right -42px;
+}
+
+.link .type a {
+  background-position: 13px -1196px;
+}
+
+/* =AUDIO */
+.audio {
+  background: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
+}
+
+.audio .type a {
+  background-position: 13px -1396px;
+  margin-bottom: 65px;
+}
+
+.audio header {
+  background-position: 0 0;
+  border: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding: 40px 80px 20px 20px;
+}
+
+.audio h2 {
+  float: left;
+  width: 500px;
+}
+
+.audio h2 a {
+  color: #fff;
+}
+
+.audio header p {
+  color: rgba(255, 255, 255, 0.4);
+  float: right;
+  line-height: 40px;
+}
+
+.audio .player {
+  background: #000;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  display: block;
+  margin-bottom: 20px;
+  padding: 6px 5px 5px 17px;
+}
+
+.audio embed {
+  display: block;
+}
+
+.audio p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.audio .ribbon a {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.6);
+}
+
+.audio .permalink a {
+  background-position: 13px -405px;
+}
+
+.audio hr {
+  background-image: url("http://static.tumblr.com/h42ojc9/664lbhpdq/bg_hr_rev.png");
+}
+
+/* =VIDEO */
+.video .type a {
+  background-position: 13px -1496px;
+}
+
+.video .screen {
+  margin-bottom: 20px;
+}
+
+.video object, .video embed, .video .screen iframe {
+  display: block;
+  height: 420px !important;
+  width: 700px !important;
+}
+
+.video .ribbon a {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.6);
+}
+
+.video .permalink a {
+  background-position: 13px -405px;
+}
+
+/* =FOOTER */
+footer {
+  position: relative;
+}
+
+.pagination {
+  background: rgba(0, 0, 0, 0.1);
+  border-top: 3px double rgba(0, 0, 0, 0.1);
+  border-bottom: 3px double rgba(0, 0, 0, 0.1);
+  padding: 16px 0;
+}
+
+/* =DPAD */
+.dpad {
+  background: url("http://static.tumblr.com/h42ojc9/irflbwdqn/bg_dpad.png") 50% 0 no-repeat;
+  height: 102px;
+  margin: 0 auto;
+  position: relative;
+  width: 240px;
+}
+
+.dpad li {
+  position: absolute;
+  top: 36px;
+}
+
+.dpad .right {
+  right: 0;
+}
+
+.dpad .left {
+  left: 0;
+}
+
+.dpad a {
+  background-image: url("http://static.tumblr.com/h42ojc9/wI1lbwdr5/bg_dpad_buttons.png");
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0.6);
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  width: 50px;
+}
+
+.dpad .right a {
+  padding-left: 65px;
+  text-align: left;
+}
+
+.dpad .left a {
+  padding-right: 65px;
+  text-align: right;
+}
+
+.dpad .right a {
+  background-position: left 0;
+}
+
+.dpad .right a:hover {
+  background-position: left -30px;
+}
+
+.dpad .right a:active {
+  background-position: left -60px;
+}
+
+.dpad .left a {
+  background-position: right -90px;
+}
+
+.dpad .left a:hover {
+  background-position: right -120px;
+}
+
+.dpad .left a:active {
+  background-position: right -150px;
+}
+
+.dpad a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
