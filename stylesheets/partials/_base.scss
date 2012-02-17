@@ -38,6 +38,10 @@ $body-margin-x: 15%;
 // Border Radius
 $default-border-radius: 8px;
 
+// Text Shadows
+$default-text-shadow-color: #000;
+$default-text-shadow-v-offset: 1px;
+
 @import "modules/all";
 
 @include global-reset;
