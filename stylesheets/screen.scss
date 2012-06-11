@@ -1,21 +1,11 @@
 /* CHIPS & BITS */
 /* AUTHOR: Matthew Anderson -> @wanderingmatt */
 
-//
-// Application Stylesheet
-//
-
-@import "partials/base";
-@import "partials/content";
-@import "partials/layout";
-
-/* =RESET */
-
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
-
-header, section, footer, aside, nav, article, figure { display: block; } /* HTML5 */
-
-/* =GLOBALS */
+@import 'compass';
+@import 'compass/reset';
+// @import "partials/base";
+// @import "partials/content";
+// @import "partials/layout";
 
 body {
   color: #555;
@@ -49,17 +39,15 @@ nav {
 // ARTICLE //
 
 article {
-  .banner { width: 100%; }
+  display: table;
   header {
-    width: 100%;
-    z-index: 0;
-  }
-  hgroup {
-    position: absolute;
+    display: table-cell;
+    height: 768px;
+    left: 0;
+    right: 0;
     text-align: center;
-    @include single-text-shadow;
-    top: 300px;
-    width: 100%;
+    vertical-align: middle;
+    z-index: 0;
   }
   time, h1, h2 {
     color: #fff;
@@ -70,9 +58,11 @@ article {
     color: #fff;
     font-size: 4.5em;
     letter-spacing: -.05em;
+    line-height: 1.5em;
   }
   h2 {
     font-size: 1.15em;
+    line-height: 1em;
   }
 }
 
@@ -80,10 +70,11 @@ article {
 
 .copy {
   background: #fff;
+  @include box-shadow(0 0 15px #000);
   padding: 5%;
-/*  position: absolute;*/
-/*  top: 50%;*/
-  z-index: 10;
+  position: relative;
+  top: 768px;
+  z-index: 1;
 }
 
 section {
