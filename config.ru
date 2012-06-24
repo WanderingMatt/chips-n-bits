@@ -23,10 +23,11 @@ if ENV['RACK_ENV'] != 'production'
   require 'sass'
   require 'sass/plugin/rack'
   require 'compass'
-  
+  require 'susy'
+
   Compass.add_project_configuration(root + '/compass.config')
   Compass.configure_sass_plugin!
-  
+
   use Sass::Plugin::Rack  # Sass Middleware
 end
 

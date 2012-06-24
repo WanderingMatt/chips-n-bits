@@ -3,12 +3,11 @@
 @import 'compass';
 @import 'compass/reset';
 @import 'framework/all';
+@import 'susy';
 
 body {
   color: #555;
   font-family: $default-font;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 p {
@@ -22,13 +21,6 @@ a {
   color: #096;
   font-weight: bold;
   text-decoration: none;
-}
-
-// NAV
-
-nav {
-  background: #fff;
-  color: #000;
 }
 
 // ARTICLE
@@ -63,8 +55,10 @@ article {
 // SECTION
 
 section {
-  margin: 0 auto;
-  width: 50%;
+  @include susy-grid-background;
+  @include container;
+  // margin: 0 auto;
+  // width: 50%;
 }
 
 // FOOTER
