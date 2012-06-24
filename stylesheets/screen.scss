@@ -16,7 +16,6 @@ p {
   margin-bottom: 1.5em;
 }
 
-
 a {
   color: #096;
   font-weight: bold;
@@ -26,16 +25,15 @@ a {
 // ARTICLE
 
 article {
+  @include susy-grid-background;
+  @include container;
   header {
     height: 768px;
-    left: 0;
-    right: 0;
     text-align: center;
   }
   time, h1, h2 {
     color: #fff;
     margin: 0 auto;
-    width: 90%;
   }
   h1 {
     color: #fff;
@@ -44,7 +42,6 @@ article {
     letter-spacing: -.05em;
     position: relative;
     @include text-shadow(0 1px 3px #000);
-    top: 50%;
   }
   h2 {
     font-size: 1.15em;
@@ -52,13 +49,11 @@ article {
   }
 }
 
-// SECTION
+// SECTIONS
 
-section {
-  @include susy-grid-background;
-  @include container;
-  // margin: 0 auto;
-  // width: 50%;
+.body {
+  @include span-columns(6, 12);
+  @include pad(3, 3);
 }
 
 // FOOTER

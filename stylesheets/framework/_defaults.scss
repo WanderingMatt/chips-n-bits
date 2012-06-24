@@ -8,10 +8,11 @@
 
 $base-font-size : 15px;
 $base-line-height: 25px;
-$total-columns: 16;
+$container-style: fluid;
+$total-columns: 12;
 $column-width: 4em;
 $gutter-width: 1em;
-$grid-padding: $gutter-width;
+$grid-padding: 1em;
 
 // COMPASS
 
