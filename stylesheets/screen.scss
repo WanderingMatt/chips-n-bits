@@ -1,0 +1,99 @@
+/* CHIPS & BITS */
+/* AUTHOR: Matthew Anderson -> @wanderingmatt */
+
+//
+// Application Stylesheet
+//
+
+@import "partials/base";
+@import "partials/content";
+@import "partials/layout";
+
+/* =RESET */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+header, section, footer, aside, nav, article, figure { display: block; } /* HTML5 */
+
+/* =GLOBALS */
+
+body {
+  color: #555;
+  font-size: 100%;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+
+a {
+  color: #096;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+// NAV //
+
+nav {
+  background: #fff;
+  color: #000;
+  padding: 2%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+// ARTICLE //
+
+article {
+  .banner { width: 100%; }
+  header {
+    width: 100%;
+    z-index: 0;
+  }
+  hgroup {
+    position: absolute;
+    text-align: center;
+    @include single-text-shadow;
+    top: 300px;
+    width: 100%;
+  }
+  time, h1, h2 {
+    color: #fff;
+    margin: 0 auto;
+    width: 90%;
+  }
+  h1 {
+    color: #fff;
+    font-size: 4.5em;
+    letter-spacing: -.05em;
+  }
+  h2 {
+    font-size: 1.15em;
+  }
+}
+
+// COPY //
+
+.copy {
+  background: #fff;
+  padding: 5%;
+/*  position: absolute;*/
+/*  top: 50%;*/
+  z-index: 10;
+}
+
+section {
+  margin: 0 auto;
+  width: 50%;
+}
+
+// FOOTER //
+
+footer {
+  bottom: 0;
+  position: fixed;
+}
