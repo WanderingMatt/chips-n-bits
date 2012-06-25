@@ -6,10 +6,11 @@ gem 'serve', '1.5.1'
 # gem 'serve', :git => 'git://github.com/jlong/serve.git'
 
 # Use Compass and Sass
-gem 'compass'
+gem 'compass-rails', '>= 1.0.0.rc.4'
+gem 'susy'
 
 # Markdown and Textile
-# gem 'rdiscount' # Markdown
+gem 'rdiscount' # Markdown
 # gem 'RedCloth'  # Textile
 
 # Other templating languages
