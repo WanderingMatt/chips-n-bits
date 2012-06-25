@@ -54,6 +54,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+strong {
+  font-weight: bold;
+}
+
 * html {
   font-size: 100%;
 }
@@ -64,7 +68,7 @@ html {
 }
 
 body {
-  color: #555;
+  color: #444444;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -132,4 +136,16 @@ h2 {
   margin-right: 1.695%;
   padding-left: 25.424%;
   padding-right: 25.424%;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+blockquote {
+  font-size: 1.625em;
+  line-height: 1.846em;
+  clear: both;
+  color: #000;
+  margin-bottom: 1.5em;
 }

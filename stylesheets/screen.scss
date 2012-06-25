@@ -8,7 +8,7 @@
 @include establish-baseline;
 
 body {
-  color: #555;
+  color: $base-color;
   font-family: $default-font;
 }
 
@@ -31,8 +31,6 @@ time, h1, h2 {
 h1 {
   color: #fff;
   @include adjust-font-size-to(80px);
-  // font-size: 4.5em;
-  // font-weight: 100;
   letter-spacing: -.05em;
   position: relative;
   @include text-shadow(0 1px 3px #000);
@@ -53,6 +51,15 @@ h2 {
 .body {
   @include span-columns(6, 12);
   @include pad(3, 3);
+}
+
+p { @include trailer; }
+
+blockquote {
+  @include adjust-font-size-to(26px);
+  clear: both;
+  color: #000;
+  @include trailer;
 }
 
 // FOOTER
