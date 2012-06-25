@@ -5,15 +5,11 @@
 @import 'framework/all';
 @import 'susy';
 
+@include establish-baseline;
+
 body {
   color: #555;
   font-family: $default-font;
-}
-
-p {
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-bottom: 1.5em;
 }
 
 a {
@@ -22,34 +18,37 @@ a {
   text-decoration: none;
 }
 
-// ARTICLE
+header {
+  height: 768px;
+  text-align: center;
+}
 
-article {
-  @include susy-grid-background;
-  @include container;
-  header {
-    height: 768px;
-    text-align: center;
-  }
-  time, h1, h2 {
-    color: #fff;
-    margin: 0 auto;
-  }
-  h1 {
-    color: #fff;
-    font-size: 4.5em;
-    font-weight: 100;
-    letter-spacing: -.05em;
-    position: relative;
-    @include text-shadow(0 1px 3px #000);
-  }
-  h2 {
-    font-size: 1.15em;
-    line-height: 1em;
-  }
+time, h1, h2 {
+  color: #fff;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #fff;
+  @include adjust-font-size-to(80px);
+  // font-size: 4.5em;
+  // font-weight: 100;
+  letter-spacing: -.05em;
+  position: relative;
+  @include text-shadow(0 1px 3px #000);
+}
+
+h2 {
+  font-size: 1.15em;
+  line-height: 1em;
 }
 
 // SECTIONS
+
+.wrapper {
+  @include susy-grid-background;
+  @include container;
+}
 
 .body {
   @include span-columns(6, 12);
