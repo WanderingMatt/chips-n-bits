@@ -49,17 +49,22 @@ h2 {
 }
 
 .body {
-  @include span-columns(6, 12);
-  @include pad(3, 3);
+  @include span-columns(6);
+  @include squish(3, 3);
 }
 
 p { @include trailer; }
 
 blockquote {
-  @include adjust-font-size-to(26px);
+  @include adjust-font-size-to(25px);
   clear: both;
   color: #000;
   @include trailer;
+}
+
+aside {
+  @include span-columns(3);
+  // @include pull(3);
 }
 
 // FOOTER
