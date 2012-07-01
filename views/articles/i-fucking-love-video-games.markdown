@@ -1,4 +1,3 @@
-<article>
 <section class="body">
 
 # Kenny
@@ -44,4 +43,3 @@ Video games are a part of me. Underneath my skin, well, you'd find Canadian baco
 Enter Bits! A place where I'll venture to document all of the things I feel about video games. I have also unlocked a secret weapon and brought it with me. Below me (literally), is a man who loves video games as much as I do.
 
 </section>
-</article>
