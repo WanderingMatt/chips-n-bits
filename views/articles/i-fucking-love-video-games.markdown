@@ -3,27 +3,27 @@
 
 # Kenny
 
-It's not very difficult to trick a 5 year old to follow your will. 
+It's not very difficult to trick a 5 year old to follow your will.
 
-In the mid 90s I enslaved my little brother to bring me food and beverages. Now, before you think to yourself "what a terrible monster", please know that I lied to him afterwards. 
+In the mid 90s I enslaved my little brother to bring me food and beverages. Now, before you think to yourself "what a terrible monster", please know that I lied to him afterwards.
 
 There. Now think "what a terrible monster."
 
-The reason I enslaved my little brother was because I developed a barter system. "Get me a Coke," I would say, "and I'll let you play." 
+The reason I enslaved my little brother was because I developed a barter system. "Get me a Coke," I would say, "and I'll let you play."
 
 Letting him play was a fabrication. I created the illusion that the second, not-plugged-in controller was in fact bringing the characters onscreen to life. It was me driving the whole time.
 
-This exchange, repeated numerous times over the course of several years, would cause bitterness between him and I. The master/slave relationship doesn't go over well when the slave ascends to enlightenment. 
+This exchange, repeated numerous times over the course of several years, would cause bitterness between him and I. The master/slave relationship doesn't go over well when the slave ascends to enlightenment.
 
-It would then become one of life's great ironies that my little brother came to me from Niagara Falls, NY in a rough patch. It's a family tradition in our early 20s to break down and build-up, break and build-up again. A Meyers' tradition in the vein of a South American government. 
+It would then become one of life's great ironies that my little brother came to me from Niagara Falls, NY in a rough patch. It's a family tradition in our early 20s to break down and build-up, break and build-up again. A Meyers' tradition in the vein of a South American government.
 
-So to Seattle he came to stay with us for a bit. It wasn't always easy. Sometimes he's incredibly lazy. I left for Seattle when he was 12 years old. We didn't have a chance to get to know one another after his station as my personal butler. 
+So to Seattle he came to stay with us for a bit. It wasn't always easy. Sometimes he's incredibly lazy. I left for Seattle when he was 12 years old. We didn't have a chance to get to know one another after his station as my personal butler.
 
 We've always shared one thing in common. If, by the contents of this blog you guess "homoerotic feelings for Canadians", you would be correct. We also really love video games.
 
-So we sat down and started co-op Gears of War 2. Then he got a job. Then he started feeling better. Then we'd continue to play Gears of War 2, laughing and dying. The anxiety of running through particularly tough situations turned to blame; anger turned to great triumph. 
+So we sat down and started co-op Gears of War 2. Then he got a job. Then he started feeling better. Then we'd continue to play Gears of War 2, laughing and dying. The anxiety of running through particularly tough situations turned to blame; anger turned to great triumph.
 
-We'd continue to meet every week to just play through whatever video game we could play together. Like "Tuesday's with Morrie" but with chainsaws on the gun I assume Morrie used. We grew closer and formed a stronger bond. Video games gave us something to do while we were actually just catching up with each other. This happened most every week for a year, until I packed up and moved to San Francisco. 
+We'd continue to meet every week to just play through whatever video game we could play together. Like "Tuesday's with Morrie" but with chainsaws on the gun I assume Morrie used. We grew closer and formed a stronger bond. Video games gave us something to do while we were actually just catching up with each other. This happened most every week for a year, until I packed up and moved to San Francisco.
 
 Last week, my brother died of Stage 4 lung cancer.
 

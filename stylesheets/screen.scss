@@ -48,18 +48,39 @@ h2 {
   @include container;
 }
 
-.body {
-  @include span-columns(6, 12);
-  @include pad(3, 3);
+section {
+  @include span-columns(6);
+  &.full { @include squish(3, 3); }
 }
 
-p { @include trailer; }
+aside {
+  @include span-columns(3);
+  &.epilogue { @include omega; }
+}
+
+figure {
+  img { width: 100%; }
+  &.framed {
+    @include span-columns(9);
+    img { @include span-columns(6, 9); }
+    figcaption { @include span-columns(3, 9); }
+  }
+  &.leading {
+    figcaption { @include omega; }
+  }
+  &.trailing {
+    @include push(3);
+    img { @include omega; }
+  }
+}
 
 blockquote {
-  @include adjust-font-size-to(26px);
+  @include adjust-font-size-to(25px);
   clear: both;
   color: #000;
   @include trailer;
 }
+
+p { @include trailer; }
 
 // FOOTER
