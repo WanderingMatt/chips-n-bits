@@ -121,8 +121,8 @@ h2 {
   width: auto;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 4em;
+  padding-right: 4em;
 }
 .wrapper:after {
   content: "";
@@ -130,16 +130,57 @@ h2 {
   clear: both;
 }
 
-.body {
+section {
   width: 49.153%;
   float: left;
   margin-right: 1.695%;
+}
+section.full {
   margin-left: 25.424%;
   margin-right: 25.424%;
 }
 
-p {
-  margin-bottom: 1.667em;
+aside {
+  width: 23.729%;
+  float: left;
+  margin-right: 1.695%;
+}
+aside.epilogue {
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
+}
+
+figure img {
+  width: 100%;
+}
+figure.framed {
+  width: 74.576%;
+  float: left;
+  margin-right: 1.695%;
+}
+figure.framed img {
+  width: 65.909%;
+  float: left;
+  margin-right: 2.273%;
+}
+figure.framed figcaption {
+  width: 31.818%;
+  float: left;
+  margin-right: 2.273%;
+}
+figure.leading figcaption {
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
+}
+figure.trailing {
+  margin-left: 25.424%;
+}
+figure.trailing img {
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
 }
 
 blockquote {
@@ -150,8 +191,6 @@ blockquote {
   margin-bottom: 1.667em;
 }
 
-aside {
-  width: 23.729%;
-  float: left;
-  margin-right: 1.695%;
+p {
+  margin-bottom: 1.667em;
 }
