@@ -14,8 +14,11 @@
   </footer>
   <script type="text/javascript" src="/javascripts/jquery-1.7.2.min.js"></script>
   <script type="text/javascript" src="/javascripts/jquery.anystretch.min.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.origami.js"></script>
   <script type="text/javascript">
-    $('header').anystretch("/images/halo-peer-pressure.jpg");
+    $('header').anystretch("/images/halo-peer-pressure.jpg")
+      .find('img').origami();
+
   </script>
 </body>
 </html>
