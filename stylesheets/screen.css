@@ -1,0 +1,136 @@
+html, body { height: 100%; }
+body {
+  background: #666 url('../images/bg.png');
+  background-image: -moz-radial-gradient(center center, circle cover, white 0%, rgba(255, 255, 255, 0) 100%), url('../images/bg.png');
+  background-image: -webkit-radial-gradient(center center, circle cover, white 0%, rgba(255, 255, 255, 0) 100%), url('../images/bg.png');
+  background-image: radial-gradient(center center, circle cover, white 0%, rgba(255, 255, 255, 0) 100%), url('../images/bg.png');
+  color: #333;
+  font: normal 16px/20px 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+}
+section {
+  display: table;
+  height: 100%;
+  margin: 0 auto;
+}
+article {
+  background: rgb(246, 246, 246);
+  background: rgba(255, 255, 255, .8);
+  box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+  display: table-cell;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+h1 {
+  background: url('../images/logo.png') 50% no-repeat;
+  background-size: 100%;
+  height: 100px;
+  margin: 0 auto;
+  text-indent: -9999px;
+}
+h2 {
+  color: rgb(144, 144, 144);
+  color: rgba(0, 0, 0, .4);
+  font-weight: normal;
+}
+nav {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+ul {
+  border-top: 1px solid rgb(218, 218, 218);
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  font-size: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  font-size: 11px;
+  width: 33.3333333%;
+}
+a { display: block; }
+
+@media screen and (max-width: 719px) {
+  body { padding: 0 10px; }
+  section { width: 100%; }
+  h1 {
+    height: 50px;
+    width: 250px;
+  }
+  h2 {
+    font-size: 15px;
+    margin: 0 auto;
+  }
+  a {
+    background-position: 50% -85px;
+    background-repeat: no-repeat;
+    height: 60px;
+  }
+  a span { opacity: 0; }
+  .third-avenue-radio a {
+    background-color: #f35f31;
+    background-image: url('../images/icon-podcast.png');
+  }
+  .facebook a {
+    background-color: #3b5998;
+    background-image: url('../images/icon-facebook.png');
+  }
+  .twitter a {
+    background-color: #00cdfb;
+    background-image: url('../images/icon-twitter.png');
+  }
+}
+
+@media screen and (min-width: 720px) {
+  section { width: 700px; }
+  h1 {
+    height: 100px;
+    width: 600px;
+  }
+  h2 { margin: 30px auto; }
+  a {
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    color: rgb(144, 144, 144);
+    color: rgba(0, 0, 0, .4);
+    display: block;
+    font-weight: bolder;
+    padding: 40px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    -moz-transition: background .2s;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+  }
+  a span {
+    -moz-transition: opacity .2s;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+  }
+  a:hover {
+    background-color: rgba(0, 0, 0, .05);
+    background-position: 50% -65px;
+  }
+  a:hover span {
+    opacity: 0;
+    filter: alpha(opacity = 0);
+  }
+  .third-avenue-radio a { background-image: url('../images/icon-podcast.png'); }
+  .third-avenue-radio a:hover { background-color: #f35f31; }
+  .facebook a {
+    background-image: url('../images/icon-facebook.png');
+    border-left: 1px solid rgb(218, 218, 218);
+    border-left: 1px solid rgba(0, 0, 0, .1);l
+    border-right: 1px solid rgb(218, 218, 218);
+    border-right: 1px solid rgba(0, 0, 0, .1);
+  }
+  .facebook a:hover { background-color: #3b5998; }
+  .twitter a { background-image: url('../images/icon-twitter.png'); }
+  .twitter a:hover { background-color: #00cdfb; }
+}
